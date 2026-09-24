@@ -611,9 +611,11 @@ Se escalan a un agente humano.
 # 17. Estructura del Proyecto
 
 ```text
-ecomarket_taller1/
+Taller1-EcoMarket-IA-Generativa/
 │
 ├── README.md
+├── FASE_1.md
+├── FASE_2.md
 ├── FASE_3.md
 ├── app.py
 ├── prompts.py
@@ -659,6 +661,8 @@ python app.py order EM-1003
 ---
 
 ## 19.2 Devolución
+
+La aplicación genera una respuesta determinística de respaldo incluso sin Ollama. Si se usa `--llm`, el mismo contexto y la política se envían al modelo generativo.
 
 Producto retornable:
 
@@ -731,11 +735,12 @@ Pruebas implementadas:
 3. Producto perecedero.
 4. Producto de higiene abierto.
 5. Producto textil retornable.
+6. Respuesta determinística de devolución no vacía y coherente.
 
-Resultado obtenido:
+Resultado esperado:
 
 ```text
-Ran 5 tests
+Ran 6 tests
 
 OK
 ```
