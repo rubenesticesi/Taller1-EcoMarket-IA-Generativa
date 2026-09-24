@@ -1,0 +1,20 @@
+{
+  "return_window_days": 30,
+  "general_conditions": [
+    "El producto debe conservar sus accesorios y empaque cuando aplique.",
+    "Debe existir comprobante o número de pedido.",
+    "Los productos deben cumplir las condiciones de higiene y seguridad definidas por EcoMarket."
+  ],
+  "non_returnable_categories": {
+    "perecedero": "Los productos perecederos no se aceptan en devolución por razones de conservación y seguridad.",
+    "higiene": "Los productos de higiene personal no se aceptan si fueron abiertos o usados."
+  },
+  "returnable_categories": {
+    "hogar_reutilizable": "Retornable dentro del plazo si se encuentra en buen estado.",
+    "textil": "Retornable dentro del plazo si no presenta uso o daño.",
+    "papeleria": "Retornable dentro del plazo si se encuentra sin uso.",
+    "jardineria": "Retornable dentro del plazo si está en buen estado.",
+    "limpieza": "Retornable si el envase permanece sellado y dentro del plazo."
+  },
+  "escalation_rule": "Si la información no permite decidir con certeza, se debe escalar el caso a un agente humano."
+}

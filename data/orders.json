@@ -1,0 +1,134 @@
+[
+  {
+    "tracking_number": "EM-1001",
+    "customer_name": "Ana Torres",
+    "product": "Botella reutilizable de acero 750 ml",
+    "category": "hogar_reutilizable",
+    "status": "En tránsito",
+    "carrier": "EcoExpress",
+    "estimated_delivery": "2026-09-25",
+    "tracking_url": "https://tracking.example/EM-1001",
+    "delay_reason": null
+  },
+  {
+    "tracking_number": "EM-1002",
+    "customer_name": "Carlos Méndez",
+    "product": "Jabón artesanal de uso personal",
+    "category": "higiene",
+    "status": "Entregado",
+    "carrier": "GreenShip",
+    "estimated_delivery": "2026-09-21",
+    "tracking_url": "https://tracking.example/EM-1002",
+    "delay_reason": null
+  },
+  {
+    "tracking_number": "EM-1003",
+    "customer_name": "Laura Gómez",
+    "product": "Café orgánico 500 g",
+    "category": "perecedero",
+    "status": "Retrasado",
+    "carrier": "EcoExpress",
+    "estimated_delivery": "2026-09-26",
+    "tracking_url": "https://tracking.example/EM-1003",
+    "delay_reason": "Demora logística en el centro de distribución"
+  },
+  {
+    "tracking_number": "EM-1004",
+    "customer_name": "Miguel Ruiz",
+    "product": "Bolsa reutilizable de algodón",
+    "category": "textil",
+    "status": "Preparando envío",
+    "carrier": "Pendiente de asignación",
+    "estimated_delivery": "2026-09-28",
+    "tracking_url": null,
+    "delay_reason": null
+  },
+  {
+    "tracking_number": "EM-1005",
+    "customer_name": "Sofía Herrera",
+    "product": "Cepillo dental de bambú sellado",
+    "category": "higiene",
+    "status": "En tránsito",
+    "carrier": "GreenShip",
+    "estimated_delivery": "2026-09-24",
+    "tracking_url": "https://tracking.example/EM-1005",
+    "delay_reason": null
+  },
+  {
+    "tracking_number": "EM-1006",
+    "customer_name": "Andrés López",
+    "product": "Cuaderno de papel reciclado",
+    "category": "papeleria",
+    "status": "Entregado",
+    "carrier": "EcoExpress",
+    "estimated_delivery": "2026-09-20",
+    "tracking_url": "https://tracking.example/EM-1006",
+    "delay_reason": null
+  },
+  {
+    "tracking_number": "EM-1007",
+    "customer_name": "Valentina Castro",
+    "product": "Set de cubiertos reutilizables",
+    "category": "hogar_reutilizable",
+    "status": "En tránsito",
+    "carrier": "GreenShip",
+    "estimated_delivery": "2026-09-27",
+    "tracking_url": "https://tracking.example/EM-1007",
+    "delay_reason": null
+  },
+  {
+    "tracking_number": "EM-1008",
+    "customer_name": "Diego Ramírez",
+    "product": "Frutas deshidratadas orgánicas",
+    "category": "perecedero",
+    "status": "Retrasado",
+    "carrier": "EcoExpress",
+    "estimated_delivery": "2026-09-29",
+    "tracking_url": "https://tracking.example/EM-1008",
+    "delay_reason": "Alta demanda y reprogramación de ruta"
+  },
+  {
+    "tracking_number": "EM-1009",
+    "customer_name": "Natalia Pérez",
+    "product": "Maceta biodegradable",
+    "category": "jardineria",
+    "status": "Preparando envío",
+    "carrier": "Pendiente de asignación",
+    "estimated_delivery": "2026-09-30",
+    "tracking_url": null,
+    "delay_reason": null
+  },
+  {
+    "tracking_number": "EM-1010",
+    "customer_name": "Juan Martínez",
+    "product": "Camiseta de algodón orgánico",
+    "category": "textil",
+    "status": "En tránsito",
+    "carrier": "GreenShip",
+    "estimated_delivery": "2026-09-25",
+    "tracking_url": "https://tracking.example/EM-1010",
+    "delay_reason": null
+  },
+  {
+    "tracking_number": "EM-1011",
+    "customer_name": "Paula Rojas",
+    "product": "Detergente ecológico sellado",
+    "category": "limpieza",
+    "status": "Entregado",
+    "carrier": "EcoExpress",
+    "estimated_delivery": "2026-09-22",
+    "tracking_url": "https://tracking.example/EM-1011",
+    "delay_reason": null
+  },
+  {
+    "tracking_number": "EM-1012",
+    "customer_name": "Felipe Vargas",
+    "product": "Termo reutilizable 1 L",
+    "category": "hogar_reutilizable",
+    "status": "Cancelado",
+    "carrier": "No aplica",
+    "estimated_delivery": null,
+    "tracking_url": null,
+    "delay_reason": "Pedido cancelado antes del despacho"
+  }
+]

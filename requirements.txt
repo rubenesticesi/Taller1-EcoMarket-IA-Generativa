@@ -1,0 +1,3 @@
+# El proyecto base usa solamente la biblioteca estándar de Python.
+# Requisito recomendado:
+# Python >= 3.10
