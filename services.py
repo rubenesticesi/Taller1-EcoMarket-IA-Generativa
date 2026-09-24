@@ -55,6 +55,36 @@ def evaluate_return(order: dict, opened: bool = False):
         "action": policy["escalation_rule"]
     }
 
+def deterministic_return_response(order: dict, evaluation: dict):
+    if not order:
+        return (
+            "No puedo verificar el pedido indicado. "
+            "Por favor valida el número o solicita apoyo de un agente humano."
+        )
+
+    eligibility = evaluation.get("eligible")
+    reason = evaluation.get("reason", "No hay una razón disponible.")
+    action = evaluation.get("action", "Solicita apoyo de un agente humano.")
+
+    if eligibility is True:
+        return (
+            f"El producto del pedido {order['tracking_number']} puede continuar con el proceso de devolución. "
+            f"{reason} {action}"
+        )
+
+    if eligibility is False:
+        return (
+            f"Lamentamos que necesites realizar una devolución del pedido {order['tracking_number']}. "
+            f"Según la política de EcoMarket, la devolución no puede autorizarse de forma automática. "
+            f"Motivo: {reason} {action}"
+        )
+
+    return (
+        f"No es posible determinar automáticamente si el pedido {order['tracking_number']} "
+        f"cumple las condiciones de devolución. {reason} {action}"
+    )
+
+
 def deterministic_order_response(order: dict):
     if not order:
         return (
