@@ -1,5 +1,5 @@
 import unittest
-from services import find_order, evaluate_return
+from services import find_order, evaluate_return, deterministic_return_response
 
 class EcoMarketTests(unittest.TestCase):
     def test_existing_order(self):
@@ -24,6 +24,13 @@ class EcoMarketTests(unittest.TestCase):
         order = find_order("EM-1010")
         result = evaluate_return(order, opened=False)
         self.assertTrue(result["eligible"])
+
+    def test_deterministic_return_response(self):
+        order = find_order("EM-1002")
+        evaluation = evaluate_return(order, opened=True)
+        response = deterministic_return_response(order, evaluation)
+        self.assertIn("EM-1002", response)
+        self.assertIn("no puede autorizarse", response.lower())
 
 if __name__ == "__main__":
     unittest.main()
