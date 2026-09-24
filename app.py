@@ -5,6 +5,7 @@ from services import (
     load_return_policy,
     evaluate_return,
     deterministic_order_response,
+    deterministic_return_response,
 )
 from ollama_client import generate_with_ollama
 
@@ -43,9 +44,11 @@ def show_return(tracking_number: str, opened: bool, use_llm: bool, model: str):
     print(f"Razón: {evaluation['reason']}")
     print(f"Acción: {evaluation['action']}")
 
+    print("\n=== RESPUESTA AL CLIENTE ===\n")
     if use_llm:
-        print("\n=== RESPUESTA DEL LLM ===\n")
         print(generate_with_ollama(prompt, model=model))
+    else:
+        print(deterministic_return_response(order, evaluation))
 
 def interactive(use_llm: bool, model: str):
     print("EcoMarket - Taller Práctico #1")
